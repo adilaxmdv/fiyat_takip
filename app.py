@@ -3,10 +3,10 @@ import smtplib
 from bs4 import BeautifulSoup
 import time
 
-url = 'https://www.hepsiburada.com/xiaomi-mi-band-5-akilli-bileklik-global-versiyon-p-HBV00000V3WEC?magaza=BUSE%20MOBILE'
+url = ''
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36'}
+    'User-Agent': ''}
 
 
 def check_price():
@@ -25,13 +25,13 @@ def check_price():
 
 
 def send_mail(title):
-    sender = 'adilaxmedov13@gmail.com'
-    receiver = 'kamil.axmedov.1950@gmail.com'
+    sender = ''
+    receiver = ''
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login(sender, 'zkuloaioixjjdvxe')
+        server.login(sender, '')
         subject = title + 'Istedigin fiyata dustu!'
         body = 'Bu linkten Gide bilirsin =>' + url
         mailContent = f"To:{receiver}\nFrom:{sender}\nSubject:{subject}\n\n{body}"
