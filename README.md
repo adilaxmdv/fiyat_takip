@@ -1,4 +1,4 @@
-## Bu script Hepsiburada icin Tasarlanmistir !##
+## Bu script Hepsiburada icin Tasarlanmistir !
 
 #Kurulum
 pip install requests
