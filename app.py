@@ -3,10 +3,10 @@ import smtplib
 from bs4 import BeautifulSoup
 import time
 
-url = ''
+url = 'Istediginiz urunun fiyati'
 
 headers = {
-    'User-Agent': ''}
+    'User-Agent': 'Your User Agent'}
 
 
 def check_price():
