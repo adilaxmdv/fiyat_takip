@@ -1,6 +1,7 @@
 ## Bu script Hepsiburada icin Tasarlanmistir !
 
-#Kurulum
+#Kurulum#
+<p></p>
 pip install requests
 <p></p>
 pip install smtplib
