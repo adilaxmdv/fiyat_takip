@@ -3,7 +3,7 @@ import smtplib
 from bs4 import BeautifulSoup
 import time
 
-url = 'Istediginiz urunun fiyati'
+url = 'Istediginiz urunun linki'
 
 headers = {
     'User-Agent': 'Your User Agent'}
