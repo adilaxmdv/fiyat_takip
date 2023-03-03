@@ -7,7 +7,7 @@ url = 'Istediginiz urunun linki'
 
 headers = {
     'User-Agent': 'Your User Agent'}
-
+login = open('login.txt',"r")
 
 def check_price():
     page = requests.get(url, headers=headers)
@@ -25,13 +25,13 @@ def check_price():
 
 
 def send_mail(title):
-    sender = ''
-    receiver = ''
+    sender = '' #Sender Mail 
+    receiver = ''# Receiver Mail
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login(sender, '')
+        server.login(sender, login)
         subject = title + 'Istedigin fiyata dustu!'
         body = 'Bu linkten Gide bilirsin =>' + url
         mailContent = f"To:{receiver}\nFrom:{sender}\nSubject:{subject}\n\n{body}"
@@ -45,4 +45,4 @@ def send_mail(title):
 
 while (1):
     check_price()
-    time.sleep(60 * 60)
+    time.sleep(60 * 60) #Time loops
