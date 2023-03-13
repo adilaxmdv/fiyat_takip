@@ -1,14 +1,9 @@
-# Bu script Hepsiburada icin Tasarlanmistir!
+# This Tool designed for [Hepsiburada](https://hepsiburada.com/)
 
-## Kurulum 
+## Installation 
 
-### pip install requests
+```sh
+pip install -r requirements.txt
+```
 
-## pip install smtplib
-
-## pip install bs4 
-
-## pip install time
-<p></p>
-
-### Ve Scripti acarak icindeki User Agent,  ürün linki , ve gmail doldurararak Kullanmaya Başlaya Bilersiniz ! 
+## Fill UserAgent,smtp,gmail,product link and joy
